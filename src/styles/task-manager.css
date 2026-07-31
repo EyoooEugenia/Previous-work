@@ -1,0 +1,110 @@
+.task-manager-box {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-soft);
+}
+
+.task-input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.task-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  outline: none;
+}
+
+.task-input:focus {
+  border-color: var(--primary-color);
+}
+
+.priority-select {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0 8px;
+  outline: none;
+  background: #f8fafc;
+}
+
+.add-task-btn {
+  background: #0f766e;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.task-header-actions {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.clear-done-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #f8fafc;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.task-item.done {
+  opacity: 0.6;
+}
+
+.task-item.done .task-text {
+  text-decoration: line-through;
+}
+
+.priority-badge {
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.priority-badge.high { background: var(--high-bg); color: var(--high-color); }
+.priority-badge.normal { background: var(--normal-bg); color: var(--normal-color); }
+.priority-badge.low { background: var(--low-bg); color: var(--low-color); }
+
+.task-text {
+  flex: 1;
+  font-size: 0.92rem;
+}
+
+.delete-task-btn {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.delete-task-btn:hover {
+  color: #ef4444;
+}

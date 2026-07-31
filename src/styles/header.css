@@ -1,0 +1,48 @@
+.app-header {
+  padding: 12px 0;
+  margin-bottom: 16px;
+}
+
+.header-title-container {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.header-main-title {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: #111827;
+  margin: 0;
+}
+
+.header-breadcrumb {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  font-size: 1.125rem;
+  font-weight: 600;
+  gap: 6px;
+}
+
+.breadcrumb-muted {
+  color: #cbd5e1;
+  max-width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.breadcrumb-active {
+  color: #0d9488;
+  font-weight: 700;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+}
